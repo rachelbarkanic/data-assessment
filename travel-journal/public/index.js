@@ -18,7 +18,7 @@ function handleSubmit(e) {
         countryId: +countrySelect.value
     }
 
-    axios.post('http://localhost:4004/cities', body)
+    axios.post('http://localhost:4004/cities/', body)
         .then(() => {
             countrySelect.value = 1
             nameInput.value = ''
